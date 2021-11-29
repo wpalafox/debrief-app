@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Navigation from './Navigation.jsx';
+import './ContactUs.css';
+
 
 export const ContactUs = () => {
   const form = useRef();
@@ -16,17 +19,29 @@ export const ContactUs = () => {
   };
 
   return (
+   <><React.Fragment>
+      <Navigation />
+    </React.Fragment>
+    
+    
     <form ref={form} onSubmit={sendEmail}>
-      <label>Participant Name </label>
-      <input type="text" name="user_name"  /> 
-      <br></br>
-      <label>Participant Email </label>
-      <input type="email" name="user_email"  />
-      <br></br>
-      <label>Response </label>
-      <textarea name="message" value="Yes, I DO want my data included in this study " />
-      <input type="submit" value="Send"  />
-    </form>
+        <p>Now that you have learned the true and full purpose of the current
+          study and know about the actual manipulations that took place as part of this study,
+          do you wish to have your data to be included in this research project?</p>
+
+        <p>Please fill out the form below and change the message content if
+          you DO NOT want your data included in this study. Press the Send button when complete.
+        </p>
+        <label>Participant Name </label>
+        <input type="text" name="user_name" />
+        <br></br>
+        <label>Participant Email </label>
+        <input type="email" name="user_email" />
+        <br></br>
+        <label>Response </label>
+        <textarea name="message" value="Yes, I DO want my data included in this study " />
+        <input type="submit" value="Send" />
+      </form></>
   );
 };
 
