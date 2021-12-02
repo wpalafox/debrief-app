@@ -77,6 +77,7 @@ function App() {
                 you can find them here: </b> </p> 
 
                 <ul>
+                    <li><a href="https://ebcs.gsu.edu/project/identify-theft-victims/">Identity Theft Prevention</a></li>
                     <li><a href="https://www.idtheftcenter.org">ID Theft Center</a></li>
                     <li><a href="https://www.ic3.gov">Internet Crime Complaint Center IC3</a></li>
                     <li><a href="https://www.equifax.com/personal/credit-report-services/credit-freeze/">EQUIFAX</a></li>
